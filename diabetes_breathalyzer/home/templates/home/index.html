@@ -1,0 +1,314 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Smart Breathalyzer</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'home/img/logo_dia.png' %}" rel="icon">
+  <link href="{% static 'home/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'home/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'home/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/lib/animate/animate.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'home/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- <a href="#hero"><img src="{% static 'img/logo.png' %}" alt="" title="" /></img></a> -->
+        <!-- Uncomment below if you prefer to use a text logo -->
+      <!--   <h1><a href="#hero"></a></h1> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#facts">Facts</a></li>
+          <li><a href="#services">Why Us</a></li>
+          <li class="menu-has-children"><a href="">Login</a>
+            <ul>
+              <li><a href="{% url 'plogin' %}">User</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Smart Breathalyzer For Blood Glucose</h1>
+      <!-- <h2><b>Thapar Institute of Engineering and Technology</b></h2> -->
+      <h1>Pain Free Diabetes</h1>
+      <h2>Because We Care</h2>
+      <!-- <a href="#about" class="btn-get-started">Get Started</a> -->
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-12 content order-lg-1 order-2">
+            <h2 class="title head_title">About Us</h2>
+            <p style="font-size: 20px; text-align: center;">
+             We are final year students of TIET, Patiala with aim of providing a PAIN FREE device to measure blood glucose. Our Smart Breathalyzer can measure blood glucose from exhaled breath. Acetone present in the exhaled breath is the basis of working of Smart Breathalyzer. 
+             <br><br>
+             <b>LET'S BE NICE TO DIABETICS, THEY DEAL WITH ENOUGH PAIN ALREADY.</b>
+            </p>
+
+           <!-- <div class="icon-box wow fadeInUp">
+             <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+             <h4 class="title"><a href="">Campus Recruitment Programme</a></h4>
+             <p class="description">CILP arranges campus interviews for placement of final year students of all branches by inviting various Public Sector and Private organization. A data base of organizations is available with CILP which is continuously updated.</p>
+           </div>
+          
+           <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+             <div class="icon"><i class="fa fa-tasks"></i></div>
+             <h4 class="title"><a href="">Project Semester for UG & Internship for PG students</a></h4>
+             <p class="description">All students of various BE engineering disciplines are required to spend a full six month’s semester in the industry completing an industrial project under the joint supervision of industry supervisors and TIETU faculty. Similarly the students of MCA do a System Development Project (SDP) of sixteen weeks duration, the students of M.Sc spend a six weeks summer training & students of MBA spend two months training in the industry. This provides a system of education that formally integrates academic studies with related work experience. More than 150 Industries provided Project slots/Training to our students, CILP assists in arranging project semester slots for various branches of engineering.ME/M.Tech Students from Computer Science, Electrical Instrumentation, Electronics Communication, Biotech & Mechanical Engineering Departments go for One Year Internship.</p>
+           </div> -->
+
+          </div>
+
+         <!--  <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div> -->
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+     <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Facts</h3>
+        <!--   <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+        </div>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">422</span>
+            <p>million diabetics in 2014</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1600000</span>
+            <p>deaths by diabetes in 2016</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">7</span>
+            <p>leading cause of death in 2016</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">700</span>
+            <p>million diabetics by 2045</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Service Section
+    ============================-->
+     <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Why Us</h3>
+          <p class="section-description"></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-credit-card"></i></a></div>
+              <h4 class="title"><a href="">Cost Friendly</a></h4>
+              <p class="description">No more pricks means no more strips and no costly device. Get measurements without any extra costs.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-heart"></i></a></div>
+              <h4 class="title"><a href="">Pain Free</a></h4>
+              <p class="description">Say goodbye to finger pricking, measure blood glucose just by blowing out breath</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-cog"></i></a></div>
+              <h4 class="title"><a href="">Easy to handle</a></h4>
+              <p class="description">No more needles and our central managment system keeps record of all previous readings.</p>
+            </div>
+          </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+    <!--       <p class="section-description"></p> -->
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6885.857694784772!2d76.37103799999997!3d30.35297200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7f6232cbef903a4!2sZiksA%20Tut!5e0!3m2!1sen!2sus!4v1572631253662!5m2!1sen!2sus" width="100%" height="380" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+     
+
+      <div class="container wow fadeInUp mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Thapar University, Prem Nagar, Patiala<br> Punjab 147001, India</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>info@thapar.edu</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 175 239 3021</p>
+              </div>
+
+               <div>
+                <i class="fa fa-globe"></i>
+                <p><a href="https://thapar.edu">thapar.edu</a></p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                {% csrf_token %}
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>CLIP</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+       <!--  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'home/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'home/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'home/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'home/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'home/lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'home/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'home/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'home/lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'home/lib/superfish/superfish.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'home/contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'home/js/main.js' %}"></script>
+
+</body>
+</html>

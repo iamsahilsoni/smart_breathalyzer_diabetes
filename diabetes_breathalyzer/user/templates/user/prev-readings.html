@@ -1,0 +1,61 @@
+ {% extends 'user/index.html' %}
+ {% block content %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Previous Records</h4>
+<!--                         <p class="category">Here is a subtitle for this table</p> -->
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-striped">
+                            <thead>
+                                <th>Date</th>
+                            	<th>Time</th>
+                            	<th>Type</th>
+                            	<th>Reading(mg/dl)</th>
+                            	<th>Comment</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                	<td>12/07/2020</td>
+                                	<td>10 am</td>
+                                	<td>Fasting</td>
+                                	<td>80</td>
+                                	<td>Normal</td>
+                                </tr>
+                                <tr>
+                                	<td>12/07/2020</td>
+                                	<td>12 pm</td>
+                                	<td>After Meal</td>
+                                	<td>120</td>
+                                	<td>Normal</td>
+                                </tr>
+                                <tr>
+                                	<td>20/07/2020</td>
+                                	<td>8 am</td>
+                                	<td>Fasting</td>
+                                	<td>99</td>
+                                	<td>Normal</td>
+                                </tr>
+                                <tr>
+                                	<td>20/07/2020</td>
+                                	<td>5 pm</td>
+                                	<td>After meal</td>
+                                	<td>120</td>
+                                	<td>Normal</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,113 @@
+ {% extends 'user/index.html' %}
+ {% block content %}
+
+<div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="icon-big icon-warning text-center">
+                                <i class="ti-briefcase"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="">
+                                <div class="numbers">
+                                    <p style="font-size:30px;">Take Test</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="icon-big icon-success text-center">
+                                <i class="ti-receipt"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="{% url 'pprevreadings' %}">
+                                <div class="numbers">
+                                    <p style="font-size:24px;">Previous Readings</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+</div>
+
+<div class="row">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="header">
+                        <h4 class="title">Blood Sugar Chart</h4>
+                        
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-hover">
+                            <thead>
+                                <th>Time & Situation</th>
+                                <th>Goal for Non-Diabetics</th>
+                                <th>Goal for Diabetics</th>
+                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fasting (before breakfast)</td>
+                                    <td> <100 mg/dl </td>
+                                    <td> 70-130 mg/dl </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Before lunch, dinner and snacks</td>
+                                    <td> <110 mg/dl </td>
+                                    <td> 70-130 mg/dl </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Two hours after meal</td>
+                                    <td> <140 mg/dl </td>
+                                    <td> <180 mg/dl </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Before going to bed</td>
+                                    <td> <120 mg/dl </td>
+                                    <td> 90-150 mg/dl </td>
+                                    
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div> 
+</div>
+
+<!-- <div class="row">
+     <div class="col-lg-12 col-lg-4">
+        <div id="map-canvas"></div>
+     </div>   
+
+</div> -->
+
+
+{% endblock %}

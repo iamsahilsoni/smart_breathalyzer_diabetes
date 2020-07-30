@@ -1,0 +1,126 @@
+ {% extends 'user/index.html' %}
+ {% block content %}
+
+
+<div class="col-lg-8 col-md-7">
+    <div class="card">
+        <div class="header">
+            <h4 class="title">Edit Profile</h4>
+        </div>
+        <div class="content">
+            <form action="{%  url 'pprofile'  %}" method = "post" enctype="multipart/form-data">
+                 {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>User Id</label>
+                            <input type="text" class="form-control border-input" name="userid" placeholder="User Id" value="{{ user_patient.userid }}" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control border-input" name="name" placeholder="Name" value="{{ user_patient.p_name }}">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Email Id</label>
+                            <input type="email" class="form-control border-input" name="email" placeholder="Email Id" value="{{ user_patient.p_email }}">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Phone No.</label>
+                            <input type="tel" class="form-control border-input" placeholder="Phone no." name="phone" value="{{ user_patient.p_ph }}">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <input type="text" class="form-control border-input" placeholder="Gender" name="gender" value="{{ user_patient.p_gender }}">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                 <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label>Diabetic</label>
+                            <input type="text" class="form-control border-input" placeholder="(Yes/No)" name="diabetic" value="{{ user_patient.p_diabetic }}">
+                        </div>
+
+                    </div> 
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-info btn-fill btn-wd">Update Profile</button>
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-lg-4 col-md-5">
+    <div class="card">
+        <div class="header">
+            <h4 class="title">Change Password</h4>
+        </div>
+        <div class="content">
+            <form  action="{%  url 'ppasschange' %}" method = "post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label>Old Password</label>
+                            <input type="password" class="form-control border-input" placeholder="old password" name="old_password" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <input type="password" class="form-control border-input" name="new_password"placeholder="new password" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-control border-input" placeholder="confirm"  name="conf_pass" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-info btn-fill btn-wd">Change</button>
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
